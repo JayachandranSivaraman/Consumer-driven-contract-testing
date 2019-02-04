@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.databinder:unfiltered_2.10:0.8.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.databinder/unfiltered_2.10/0.8.2/e31e15f2dfaba6456471d5e2be8eb43d15ebd394/unfiltered_2.10-0.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.databinder/unfiltered_2.10/0.8.2/d012559acac5d31535836b10a9d633541c94c579/unfiltered_2.10-0.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

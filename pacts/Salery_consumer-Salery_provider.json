@@ -1,0 +1,42 @@
+{
+  "provider" : {
+    "name" : "Salery_provider"
+  },
+  "consumer" : {
+    "name" : "Salery_consumer"
+  },
+  "interactions" : [ {
+    "providerState" : "Salery",
+    "description" : "get hello world response",
+    "request" : {
+      "method" : "GET",
+      "path" : "/get-salery"
+    },
+    "response" : {
+      "status" : 200,
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "body" : {
+        "basicPay" : "ILFwighgQgdQUcodXSvd",
+        "allowances" : "xdeQbjvuIFhfOBBVjmaO"
+      },
+      "responseMatchingRules" : {
+        "$.body.basicPay" : {
+          "match" : "type"
+        },
+        "$.body.allowances" : {
+          "match" : "type"
+        }
+      }
+    }
+  } ],
+  "metadata" : {
+    "pact-specification" : {
+      "version" : "2.0.0"
+    },
+    "pact-jvm" : {
+      "version" : "2.1.12"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "provider" : {
+    "name" : "Employee_provider"
+  },
+  "consumer" : {
+    "name" : "Employee_consumer"
+  },
+  "interactions" : [ {
+    "providerState" : "Employee",
+    "description" : "get hello world response",
+    "request" : {
+      "method" : "GET",
+      "path" : "/get-employees"
+    },
+    "response" : {
+      "status" : 200,
+      "headers" : {
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "body" : {
+        "test" : "XwjNCzrZtULeYEUIvjoO",
+        "employee_id" : "ReeoyRrZSUUXocJriiat",
+        "name" : "TQzKzEWDugNYeaxRPUTn",
+        "id" : 6876944894,
+        "department" : "kTLfarYKypIMFLOxacWz"
+      },
+      "responseMatchingRules" : {
+        "$.body.name" : {
+          "match" : "type"
+        },
+        "$.body.id" : {
+          "match" : "type"
+        },
+        "$.body.employee_id" : {
+          "match" : "type"
+        },
+        "$.body.test" : {
+          "match" : "type"
+        },
+        "$.body.department" : {
+          "match" : "type"
+        }
+      }
+    }
+  } ],
+  "metadata" : {
+    "pact-specification" : {
+      "version" : "2.0.0"
+    },
+    "pact-jvm" : {
+      "version" : "2.1.12"
+    }
+  }
+}
